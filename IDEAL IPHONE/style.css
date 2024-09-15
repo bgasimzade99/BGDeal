@@ -1,0 +1,179 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   color: #333;
+}
+
+header {
+   background-color: #333;
+   color: white;
+   padding: 10px 0;
+   line-height: 10px;
+}
+
+.header-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 10px;
+}
+
+.logo {
+   width: 120px;
+   height: 140px;
+   border: none;
+   border-radius: 12px;
+   align-items: left;
+   color: rgba(255, 255, 255, 0.85);
+   cursor: pointer;
+   display: flex;
+   font-family: Roboto, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-variant-numeric: lining-nums;
+   height: 35.05px;
+   justify-content: center;
+   line-height: 8px;
+   padding-bottom: 30px;
+   padding-left: 0px;
+   padding-right: 30px;
+   padding-top: 30px;
+   text-decoration-color: rgba(255, 255, 255, 0.85);
+   text-decoration-line: none;
+   text-decoration-style: solid;
+   text-decoration-thickness: auto;
+   text-size-adjust: 100%;
+   width: 170px;
+   border: none;
+   border-radius: 20px;
+
+   -webkit-font-smoothing: antialiased;
+   -webkit-tap-highlight-color: rgba(51, 51, 51, 0);
+}
+
+header h1 {
+   margin: 0;
+}
+
+header nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+}
+
+header nav ul li {
+   margin: 0 15px;
+}
+
+header nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+header nav ul li a:hover {
+   text-decoration: underline;
+}
+
+main {
+   max-width: 1200px;
+   margin: 20px auto;
+   padding: 0 20px;
+}
+
+.product-section {
+   background: white;
+   margin-bottom: 20px;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+.product-section img {
+   width: 100%;
+   max-width: 300px;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.price {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #555;
+}
+
+footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+   position: relative;
+   width: 100%;
+}
+/* The switch - the box around the slider */
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+/* The slider */
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: white;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+}
+
+input:checked + .slider {
+   background-color: #333;
+}
+
+input:focus + .slider {
+   box-shadow: 0 0 1px #333;
+}
+
+input:checked + .slider:before {
+   -webkit-transform: translateX(26px);
+   -ms-transform: translateX(26px);
+   transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}

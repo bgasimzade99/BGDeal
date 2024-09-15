@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="apple.jpg">
+    <link rel="jsjs" href="js.js">
+    <style>
+        /* CSS to make the favicon circular */
+        link[rel="icon"] {
+            border-radius: 18px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="ideal3.jpg" alt="Apple Logo" class="logo">
+            <h1>BG iPhone Collection</h1>
+            <nav>
+                <ul>
+                    <li><a href="#iphone15">iPhone 15</a></li>
+                    <li><a href="#iphone14">iPhone 14</a></li>
+                    <li><a href="#iphone13">iPhone 13</a></li>
+                    <li><a href="#iphone12">iPhone 12</a></li>
+                    <li><a href="#iphoneSE">iPhone SE</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="iphone15" class="product-section">
+            <h2>iPhone 15</h2>
+            <img id="iphoneImage15" src="iphone 15.png" alt="iPhone 15">
+            <p class="price">Starting from €819,00</p>
+            <button class="more-button">More</button>
+            <style>
+                .more-button {
+                    background-color: rgb(68, 74, 74);
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 18px;
+                    height: 32px;
+                    width: 69px;
+                    padding-left: 18px;
+                    position: relative;
+                    top: 6px;
+                    box-shadow: 10px;
+                    text-align: center;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                .more-button {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                .more-button:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" id="imageSwitch15">
+                <span class="slider round"></span>
+            </label>
+        </section>
+
+        <script>
+            let isOriginalImage = true;
+
+            document.getElementById('imageSwitch15').addEventListener('change', function () {
+                var img = document.getElementById('iphoneImage15');
+                if (isOriginalImage) {
+                    img.src = 'back15.jpeg'; // Switch to the new image
+                } else {
+                    img.src = 'iphone 15.png'; // Switch back to the original image
+                }
+                isOriginalImage = !isOriginalImage; // Toggle the state
+            });
+        </script>
+
+
+
+
+        <section id="iphone 14" class="product-section">
+            <h2>iPhone 14</h2>
+            <img id="iphoneImage14" src="iphone 14.jpeg" alt="iPhone 14">
+            <p class="price">Starting from €759,00</p>
+            <button class="more-button">More</button>
+            <style>
+                .more-button {
+                    background-color: rgb(68, 74, 74);
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 18px;
+                    height: 32px;
+                    width: 69px;
+                    padding-left: 18px;
+                    position: relative;
+                    top: 6px;
+                    box-shadow: 10px;
+                    text-align: center;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                .more-button {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                .more-button:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" id="imageSwitch14">
+                <span class="slider round"></span>
+
+            </label>
+        </section>
+        <script>
+            let isOriginalImage3 = true;
+
+            document.getElementById('imageSwitch14').addEventListener('change', function () {
+                var img = document.getElementById('iphoneImage14');
+                if (isOriginalImage2) {
+                    img.src = 'front14.png'; // Switch to the new image
+                } else {
+                    img.src = 'iphone 14.jpeg'; // Switch back to the original image
+                }
+                isOriginalImage2 = !isOriginalImage2; // Toggle the state
+            });
+
+        </script>
+
+
+        <section id="iphone13" class="product-section">
+            <h2>iPhone 13</h2>
+            <img id="iphoneImage13" src="iphone13.jpeg" alt="iPhone 13"> <!-- Add ID here -->
+            <p class="price">Starting from €689,00</p>
+            <button class="more-button">More</button>
+            <style>
+                .more-button {
+                    background-color: rgb(68, 74, 74);
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 18px;
+                    height: 32px;
+                    width: 69px;
+                    padding-left: 18px;
+                    position: relative;
+                    top: 6px;
+                    box-shadow: 10px;
+                    text-align: center;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                .more-button {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                .more-button:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" id="imageSwitch13"> <!-- Add ID here -->
+                <span class="slider round"></span>
+            </label>
+        </section>
+        <script>
+            let isOriginalImage2 = true;
+
+            document.getElementById('imageSwitch13').addEventListener('change', function () {
+                var img = document.getElementById('iphoneImage13');
+                if (isOriginalImage2) {
+                    img.src = 'front13.jpeg'; // Switch to the new image
+                } else {
+                    img.src = 'iphone13.jpeg'; // Switch back to the original image
+                }
+                isOriginalImage2 = !isOriginalImage2; // Toggle the state
+            });
+
+        </script>
+
+
+        <section id="iphone12" class="product-section">
+            <h2>iPhone 12</h2>
+            <img id="iphoneImage12" src="iphone12.jpeg" alt="iPhone 12">
+            <p class="price">Starting from €629,00</p>
+            <button class="more-button">More</button>
+            <label class="switch">
+                <input type="checkbox" id="imageSwitch12"> <!-- Add ID here -->
+                <span class="slider round"></span>
+            </label>
+        </section>
+        <script>
+            let isOriginalImage4 = true;
+
+            document.getElementById('imageSwitch12').addEventListener('change', function () {
+                var img = document.getElementById('iphoneImage12');
+                if (isOriginalImage4) {
+                    img.src = 'front12.jpeg'; // Switch to the new image
+                } else {
+                    img.src = 'iphone12.jpeg'; // Switch back to the original image
+                }
+                isOriginalImage4 = !isOriginalImage4; // Toggle the state
+            });
+
+        </script>
+        <style>
+            .more-button {
+                background-color: rgb(68, 74, 74);
+                color: white;
+                font-weight: bold;
+                border-radius: 18px;
+                height: 32px;
+                width: 69px;
+                padding-left: 18px;
+                position: relative;
+                top: 6px;
+                box-shadow: 10px;
+                text-align: center;
+                margin-left: 3px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s;
+                /* Safari */
+                transition-duration: 0.4s;
+            }
+
+            .more-button {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .more-button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            }
+        </style>
+
+
+
+        <section id="iphoneSE" class="product-section">
+            <h2>iPhone SE</h2>
+            <img src="iphone se.jpeg" alt="iPhone SE">
+            <p class="price">Starting from €499,00</p>
+            <button class="more-button">More</button>
+            <style>
+                .more-button {
+                    background-color: rgb(68, 74, 74);
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 18px;
+                    height: 32px;
+                    width: 69px;
+                    padding-left: 18px;
+                    position: relative;
+                    top: 6px;
+                    box-shadow: 10px;
+                    text-align: center;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s;
+                    /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                .more-button {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                .more-button:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </section>
+
+        <section id="accessories" class="product-section">
+            <h2>Accessories</h2>
+            <img src="accs.jpeg" alt="Accessories">
+            <p class="price">Check out our latest accessories for iPhone.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
